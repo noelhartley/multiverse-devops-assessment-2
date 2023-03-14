@@ -10,8 +10,8 @@ with open(csvfile) as file: #opening the csv file using 'with open'
 
 def cap_names(csv_data): #defining function
     for row in csv_data: #looping through rows in csv_data
-        row[1] = row[1].capitalize() #using array for row 1 (first_name) and using capitalize() to capitalize the string
-        row[2] = row[2].capitalize() #using array for row 2 (last_name) and using capitalize() to capitalize the string
+        row[1] = row[1].upper() #using array for row 1 (first_name) and using capitalize() to capitalize the string
+        row[2] = row[2].upper() #using array for row 2 (last_name) and using capitalize() to capitalize the string
 
 cap_names(csv_data)
 
